@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robotics and Drones Summer Camp 2026 | Raak Sapphire</title>
+  <meta name="description"
+    content="Hands-on Robotics, Coding & AI for Kids (Grades 1-12). Join Raak Sapphire's exclusive Summer Camp to build future-ready skills.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=3">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <img src="95e698d9-2da9-4898-8bfb-68a85e464ddf_removalai_preview (2).png" alt="Raak Sapphire Logo"
+        style="height: 50px;">
+    </div>
+    <nav class="nav-menu">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#programs" class="nav-link">Programs</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+    </nav>
+    <div style="display: flex; gap: 10px; align-items: center;">
+      <button id="theme-toggle" class="btn btn-icon"
+        style="background: transparent; border: none; font-size: 1.5rem; cursor: pointer; padding: 0 10px; transition: transform 0.3s; color: var(--primary-yellow);"
+        aria-label="Toggle Dark/Light Mode" title="Toggle Dark/Light Mode">☀️</button>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSchzLQ1E5rFpXlHDoTiKQEpYJR9k3nB4aK0OdbcK1PN5jRbAg/viewform?usp=header"
+        class="btn btn-outline" target="_blank"
+        style="padding: 0.6rem 1rem; border: 1px solid var(--primary-yellow); color: var(--primary-yellow); background: rgba(0,0,0,0.3);">Register
+        Here</a>
+      <a href="https://forms.gle/cyLb8YosPR9vvDvZ7" class="btn btn-primary" target="_blank">Book Free Demo</a>
+    </div>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <!-- Background Video -->
+      <video autoplay muted loop id="hero-video">
+        <source src="bg summer camp video (1).mp4" type="video/mp4">
+      </video>
+      <div class="overlay"></div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">Robotics and Drones Summer Camp <span class="highlight">2026</span></h1>
+        <p class="hero-subtitle">Meticulously Aligned with NEP 2020. Build. Design. Innovate.</p>
+
+        <div class="age-badge">
+          <span>For Grades 1 to 12</span>
+        </div>
+
+        <div class="cta-group"
+          style="display: flex; flex-direction: column; gap: 20px; align-items: center; max-width: 250px; margin: 0 auto;">
+          <a href="https://forms.gle/cyLb8YosPR9vvDvZ7" class="btn btn-primary cta-pulse" target="_blank"
+            style="width: 100%;">Book A Free Trial</a>
+          <a href="brochure (1).pdf" download class="btn btn-outline"
+            style="border: 1px solid rgba(255,255,255,0.7); color: var(--white); background: rgba(0,0,0,0.3); width: 100%;">Download
+            Brochure</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof">
+      <div class="stats-container">
+        <div class="stat-item">
+          <h3>Build</h3>
+          <p>Real Hardware</p>
+        </div>
+        <div class="stat-item">
+          <h3>Design</h3>
+          <p>Creative Innovation</p>
+        </div>
+        <div class="stat-item">
+          <h3>Innovate</h3>
+          <p>Future Technologies</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section text-center">
+      <div class="container">
+        <h2 class="section-title">About <span>Raak Sapphire</span></h2>
+
+        <div class="about-videos-wrapper"
+          style="display: flex; gap: 20px; justify-content: center; align-items: stretch; max-width: 1000px; margin: 0 auto; flex-wrap: wrap;">
+          <div class="about-video-wide"
+            style="flex: 1; min-width: 300px; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(255, 255, 255, 0.1); margin: 0;">
+            <video autoplay muted loop playsinline class="showcase-vid-wide"
+              style="width: 100%; height: 100%; object-fit: cover; display: block; aspect-ratio: 16/9;">
+              <source src="WhatsApp Video 2026-04-09 at 1.50.55 AM.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="about-video-wide"
+            style="flex: 1; min-width: 300px; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(255, 255, 255, 0.1); margin: 0;">
+            <video autoplay muted loop playsinline class="showcase-vid-wide"
+              style="width: 100%; height: 100%; object-fit: cover; display: block; aspect-ratio: 16/9;">
+              <source src="WhatsApp Video 2026-04-09 at 12.53.40 AM (1).mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <p style="font-size: 1.2rem; max-width: 900px; margin: 40px auto; color: var(--text-light);">Raak Sapphire Pvt
+          Ltd. is a pioneering Ed-Tech company specializing in personalized K-12 STEAM programs. Our hands-on
+          methodology transforms learning into an enjoyable, meaningful, and enduring experience, aimed at endowing
+          students with essential 21st-century skills. Our curriculum, meticulously aligned with NEP 2020, forms the
+          bedrock for our field-tested success at centers, classrooms, and community spaces. With a devoted cadre of
+          highly trained STEAM instructors, Raak Sapphire ardently commits to cultivating students and nurturing a
+          positive learning milieu. Join us on the journey of education excellence!<strong>NEP 2020</strong>.</p>
+
+        <div class="about-grid" style="text-align: left; max-width: 1000px; margin: 0 auto;">
+          <div>
+            <h3 style="color:var(--primary-yellow); font-size:1.8rem; margin-bottom:15px;">Our Vision</h3>
+            <p style="color:var(--text-dark); font-size:1.1rem;">To inspire young students to explore technology,
+              develop innovative thinking, and build immense confidence in robotics and engineering learning. We aim to
+              nurture future leaders seamlessly transitioning into the AI-driven era.</p>
+          </div>
+          <div>
+            <h3 style="color:var(--primary-yellow); font-size:1.8rem; margin-bottom:15px;">Our Mission</h3>
+            <p style="color:var(--text-dark); font-size:1.1rem;">To introduce students to practical robotics and AI,
+              providing a platform where students can build, test, and adapt. Transforming abstract concepts into
+              entirely real-world tech through completely engaging environments.</p>
+          </div>
+        </div>
+
+        <!-- Embedded Media Highlights -->
+        <div class="media-highlights"
+          style="margin: 60px auto 0; max-width: 1000px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 50px;">
+          <h3 style="color: var(--white); font-size: 2rem; margin-bottom: 15px;" class="text-center">Summer Camp <span
+              class="highlight">Video & Insta</span></h3>
+          <p
+            style="color: var(--text-dark); text-align: center; margin-bottom: 40px; font-size: 1.1rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+            Discover our hands-on STEAM methodology! Watch the step-by-step process of building a high-tech drone and
+            catch a glimpse of our energetic camp environment.
+          </p>
+          <div style="display: flex; gap: 30px; justify-content: center; align-items: center; flex-wrap: wrap;">
+
+            <!-- YouTube Link (How to make drone) -->
+            <a href="https://youtu.be/lW-L_-SMIvo?si=66ZpH4e-_nR_g_oq" target="_blank" class="btn btn-youtube cta-pulse"
+              style="display: flex; align-items: center; gap: 10px; font-size: 1.2rem;">
+              ▶ Watch How to Build a Drone
+            </a>
+
+            <!-- Instagram Link -->
+            <a href="https://www.instagram.com/reel/DWieSGyzfII/?igsh=MW10aG9zZnVuaXNoeg==" target="_blank"
+              class="btn btn-instagram cta-pulse"
+              style="display: flex; align-items: center; gap: 10px; font-size: 1.2rem;">
+              📸 Watch on Instagram
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners & Certifications Section -->
+    <section class="partners">
+      <div class="container">
+        <div class="split-layout" style="align-items: flex-start; gap: 40px; margin-top: 20px;">
+          <!-- Partners Subsection -->
+          <div class="partner-group" style="flex: 1;">
+            <h2 class="section-title text-center" style="font-size: 2.2rem; margin-bottom: 20px;">Esteemed
+              <span>Partners</span>
+            </h2>
+            <div class="logo-grid" style="gap: 30px; margin-top: 0;">
+              <img src="esteemed partner/YMRD.png" alt="YMRD Logo" class="partner-logo" style="max-height: 80px;">
+              <img src="esteemed partner/ceg logo.png" alt="CEG Logo" class="partner-logo" style="max-height: 80px;">
+              <img src="esteemed partner/inunity logo (1).png" alt="InUnity Logo" class="partner-logo"
+                style="max-height: 80px;">
+              <img src="esteemed partner/WhatsApp Image 2026-04-09 at 11.48.35 PM.jpeg" alt="Partner Logo 1"
+                class="partner-logo" style="max-height: 80px;">
+              <img src="esteemed partner/WhatsApp Image 2026-04-09 at 11.48.36 PM.jpeg" alt="Partner Logo 2"
+                class="partner-logo" style="max-height: 80px;">
+            </div>
+          </div>
+
+          <!-- Vertical Divider (Visible mostly on desktop) -->
+          <div
+            style="width: 2px; background: rgba(255,255,255,0.05); align-self: stretch; margin: 0 10px; min-height: 200px;"
+            class="desktop-divider"></div>
+
+          <!-- Certifications Subsection -->
+          <div class="certification-group" style="flex: 1;">
+            <h2 class="section-title text-center" style="font-size: 2.2rem; margin-bottom: 20px;">Industrial
+              <span>Certifications</span>
+            </h2>
+            <div class="logo-grid certification-grid" style="gap: 15px; margin-top: 0;">
+              <img src="certified/GEM PNG (1).png" alt="GEM Certification" class="partner-logo certification-img"
+                style="max-width: 140px; max-height: 100px;">
+              <img src="certified/pngwing.com(280) (1).png" alt="Certification 1" class="partner-logo certification-img"
+                style="max-width: 140px; max-height: 100px;">
+              <img src="certified/pngwing.com(283) (1).png" alt="Certification 2" class="partner-logo certification-img"
+                style="max-width: 140px; max-height: 100px;">
+              <img src="certified/pngwing.com(284) (1).png" alt="Certification 3" class="partner-logo certification-img"
+                style="max-width: 140px; max-height: 100px;">
+              <img src="certified/raak_certificate (1).png" alt="Raak Certificate"
+                class="partner-logo certification-img" style="max-width: 140px; max-height: 100px;">
+              <img src="certified/rspl stem certificate.png" alt="RSPL Stem Certification"
+                class="partner-logo certification-img" style="max-width: 140px; max-height: 100px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unified Program & Modes Section -->
+
+    <!-- Mode Selection Benefits -->
+    <div class="modes-selector text-center" style="margin-top: 50px;">
+      <h3 style="color: var(--white); margin-bottom: 15px; font-size: 2.2rem;">Program <span
+          class="highlight">Modes</span></h3>
+      <p style="color: var(--text-dark); max-width: 700px; margin: 0 auto 30px;">Choose the learning environment
+        that best fits your child's needs. Every student gets a <strong style="color: var(--primary-yellow);">Free
+          Robotics Kit</strong> regardless of the mode.</p>
+
+      <div class="mode-grid" style="display: flex; flex-direction: column; gap: 40px;">
+        <!-- Online Mode -->
+        <div class="mode-info-card"
+          style="display: flex; flex-wrap: wrap; text-align: left; align-items: stretch; gap: 40px; background: transparent; padding: 0; border: none;">
+          <div style="flex: 1; min-width: 280px; display: flex; align-items: center; justify-content: center;">
+            <div
+              style="width: 100%; max-width: 400px; padding: 10px; border: 2px solid var(--primary-yellow); border-radius: 12px; background: rgba(0,0,0,0.2);">
+              <img src="WhatsApp Image 2026-04-09 at 4.03.27 AM.jpeg" alt="Online Mode Poster"
+                style="width: 100%; height: auto; object-fit: contain; border-radius: 8px; display: block;">
+            </div>
+          </div>
+          <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; justify-content: center;">
+            <h4 style="margin-bottom: 20px; font-size: 2rem; color: var(--primary-yellow);">Online Mode</h4>
+            <p
+              style="color: var(--text-light); margin-bottom: 25px; font-size: 1.1rem; line-height: 1.6; padding-right: 20px;">
+              Experience world-class robotics training from the comfort of your home. Perfect for busy schedules and
+              learners across India. Get a <strong style="color: white;">Free Robotics Kit</strong> delivered to your
+              door!
+            </p>
+            <ul style="margin: 0; padding: 0; list-style: none;">
+              <li
+                style="margin-bottom: 15px; display: flex; gap: 15px; color: var(--text-light); font-size: 1.1rem; align-items: flex-start;">
+                <span style="color: var(--primary-yellow);">→</span> <span>Live interactive mentorship with real-time
+                  feedback</span>
+              </li>
+              <li
+                style="margin-bottom: 15px; display: flex; gap: 15px; color: var(--text-light); font-size: 1.1rem; align-items: flex-start;">
+                <span style="color: var(--primary-yellow);">→</span> <span>Flexible timing to match your child's
+                  schedule</span>
+              </li>
+              <li
+                style="margin-bottom: 15px; display: flex; gap: 15px; color: var(--text-light); font-size: 1.1rem; align-items: flex-start;">
+                <span style="color: var(--primary-yellow);">→</span> <span>Free Robotics Kit safely delivered to your
+                  doorstep</span>
+              </li>
+              <li
+                style="margin-bottom: 0; display: flex; gap: 15px; color: var(--text-light); font-size: 1.1rem; align-items: flex-start;">
+                <span style="color: var(--primary-yellow);">→</span> <span>Engaging software-based project
+                  simulations</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Offline Mode -->
+        <div class="mode-info-card"
+          style="display: flex; flex-wrap: wrap; text-align: left; align-items: stretch; gap: 40px; background: transparent; padding: 0; border: none;">
+          <div style="flex: 1; min-width: 280px; display: flex; align-items: center; justify-content: center;">
+            <div
+              style="width: 100%; max-width: 400px; padding: 10px; border: 2px solid var(--primary-yellow); border-radius: 12px; background: rgba(0,0,0,0.2);">
+              <img src="WhatsApp Image 2026-04-09 at 4.04.02 AM.jpeg" alt="Offline Mode Poster"
+                style="width: 100%; height: auto; object-fit: contain; border-radius: 8px; display: block;">
+            </div>
+          </div>
+          <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; justify-content: center;">
+            <h4 style="margin-bottom: 20px; font-size: 2rem; color: var(--primary-yellow);">Offline Mode</h4>
+            <p
+              style="color: var(--text-light); margin-bottom: 25px; font-size: 1.1rem; line-height: 1.6; padding-right: 20px;">
+              Join us at our tech-hubs for an immersive, hands-on experience with expert instructors and peer
+              collaboration. <strong style="color: white;">Free Robotics Kit</strong> provided in-class!
+            </p>
+            <ul style="margin: 0; padding: 0; list-style: none;">
+              <li
+                style="margin-bottom: 15px; display: flex; gap: 15px; color: var(--text-light); font-size: 1.1rem; align-items: flex-start;">
+                <span style="color: var(--primary-yellow);">→</span> <span>Direct face-to-face guidance from expert
+                  instructors</span>
+              </li>
+              <li
+                style="margin-bottom: 15px; display: flex; gap: 15px; color: var(--text-light); font-size: 1.1rem; align-items: flex-start;">
+                <span style="color: var(--primary-yellow);">→</span> <span>Access to advanced on-site tools and build
+                  spaces</span>
+              </li>
+              <li
+                style="margin-bottom: 15px; display: flex; gap: 15px; color: var(--text-light); font-size: 1.1rem; align-items: flex-start;">
+                <span style="color: var(--primary-yellow);">→</span> <span>Free Robotics Kit provided directly
+                  in-class</span>
+              </li>
+              <li
+                style="margin-bottom: 0; display: flex; gap: 15px; color: var(--text-light); font-size: 1.1rem; align-items: flex-start;">
+                <span style="color: var(--primary-yellow);">→</span> <span>Team-building and exciting peer
+                  collaboration</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- Enrollment Timeline Section -->
+    <section class="enroll-timeline" id="how-to-enroll">
+      <div class="container">
+        <h2 class="section-title text-center" style="font-size: 2.2rem;">How can kids in Bangalore enroll in the
+          <br><span style="color:var(--primary-yellow);">Robotics Summer Camp</span>
+        </h2>
+
+        <div class="timeline">
+          <!-- Step 1 -->
+          <div class="timeline-item left">
+            <div class="timeline-dot">1</div>
+            <div class="timeline-content">
+              <h3 style="margin-bottom: 0;">Attend a Free Trial Class from Home in Bangalore</h3>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="timeline-item right">
+            <div class="timeline-dot">2</div>
+            <div class="timeline-content">
+              <h3 style="margin-bottom: 0;">Get a Personalized Program Recommendation</h3>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="timeline-item left">
+            <div class="timeline-dot">3</div>
+            <div class="timeline-content">
+              <h3 style="margin-bottom: 0;">Robotics Kit Delivered to Your Home in Bangalore</h3>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="timeline-item right">
+            <div class="timeline-dot">4</div>
+            <div class="timeline-content">
+              <h3 style="margin-bottom: 0;">Join Live Robotics Classes with Expert Teachers</h3>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="timeline-item left">
+            <div class="timeline-dot">5</div>
+            <div class="timeline-content">
+              <h3 style="margin-bottom: 0;">Build Real Projects & Participate in Robotics Competitions</h3>
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="timeline-item right">
+            <div class="timeline-dot">6</div>
+            <div class="timeline-content">
+              <h3 style="margin-bottom: 0;">Graduate with Certification & Practical Robotics Skills</h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <style>
+      .marquee-container {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        padding-bottom: 60px;
+        background: var(--bg-gradient);
+      }
+
+      .marquee-track {
+        display: inline-flex;
+        gap: 20px;
+        animation: scrollMarquee 70s linear infinite;
+      }
+
+      .marquee-track:hover {
+        animation-play-state: paused;
+      }
+
+      .marquee-track img {
+        height: 250px;
+        width: auto;
+        border-radius: 12px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        object-fit: cover;
+      }
+
+      .marquee-track img:hover {
+        transform: scale(1.05) translateY(-10px);
+        box-shadow: 0 15px 30px rgba(100, 255, 218, 0.4);
+        cursor: pointer;
+      }
+
+      @keyframes scrollMarquee {
+        0% {
+          transform: translateX(0);
+        }
+
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .marquee-wrapper {
+        position: relative;
+        -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+        mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+      }
+    </style>
+
+    <!-- Gallery Marquee Section -->
+    <section class="gallery-marquee"
+      style="padding-top: 60px; background: var(--bg-gradient); border-top: 1px solid rgba(255, 255, 255, 0.05);">
+      <h2 class="section-title text-center">Camp <span>Gallery</span></h2>
+      <div class="marquee-wrapper">
+        <div class="marquee-container">
+          <div class="marquee-track">
+            <!-- Regular Set -->
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.42.20 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.42.56 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.14 AM (1).jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.14 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.15 AM (1).jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.15 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.16 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.17 AM (1).jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.17 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.18 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.19 AM (1).jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.19 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.20 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.21 AM (1).jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.21 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.22 AM (1).jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.22 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.23 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.24 AM (1).jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.24 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.25 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.26 AM.jpeg"
+              alt="Camp Gallery">
+            <!-- Duplicated Set for infinite continuous scroll -->
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.42.20 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.42.56 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.14 AM (1).jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.14 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.15 AM (1).jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.15 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.16 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.17 AM (1).jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.17 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.18 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.19 AM (1).jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.19 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.20 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.21 AM (1).jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.21 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.22 AM (1).jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.22 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.23 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.24 AM (1).jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.24 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.25 AM.jpeg"
+              alt="Camp Gallery">
+            <img src="WhatsApp Unknown 2026-04-09 at 3.44.32 AM/WhatsApp Image 2026-04-09 at 2.49.26 AM.jpeg"
+              alt="Camp Gallery">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <h2 class="section-title text-center">Flexible <span>Plans</span></h2>
+        <div class="pricing-grid">
+
+          <!-- Box 1 -->
+          <div class="price-card">
+            <h3>Online Robotics</h3>
+            <p style="margin-top: 10px;">1 Month Online Mode</p>
+            <ul style="margin-top: 15px;">
+              <li>3 Sessions per week</li>
+              <li>FREE Robotics Kit (worth ₹2000)</li>
+              <li>Refer 5 Friends for ₹500 Discount!</li>
+            </ul>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSchzLQ1E5rFpXlHDoTiKQEpYJR9k3nB4aK0OdbcK1PN5jRbAg/viewform?usp=header"
+              target="_blank" class="btn btn-outline" style="width: 100%; margin-top:20px;">Register Now</a>
+          </div>
+
+          <!-- Box 2 -->
+          <div class="price-card">
+            <h3>Offline Robotics</h3>
+            <p style="margin-top: 10px;">1 Month Offline Mode</p>
+            <ul style="margin-top: 15px;">
+              <li>3 Sessions per week</li>
+              <li>FREE Robotics Kit (worth ₹2000)</li>
+              <li>Refer 5 Friends for ₹500 Discount!</li>
+            </ul>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSchzLQ1E5rFpXlHDoTiKQEpYJR9k3nB4aK0OdbcK1PN5jRbAg/viewform?usp=header"
+              target="_blank" class="btn btn-outline" style="width: 100%; margin-top:20px;">Register Now</a>
+          </div>
+
+          <!-- Box 3 -->
+          <div class="price-card best-value">
+            <div class="badge">DRONE ONLINE</div>
+            <h3>Online Drone</h3>
+            <p style="margin-top: 10px;">1 Month Online Mode</p>
+            <ul style="margin-top: 15px;">
+              <li>3 Sessions per week</li>
+              <li>FREE Robotics Kit (worth ₹2000)</li>
+              <li>Refer 5 Friends for ₹500 Discount!</li>
+            </ul>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSchzLQ1E5rFpXlHDoTiKQEpYJR9k3nB4aK0OdbcK1PN5jRbAg/viewform?usp=header"
+              target="_blank" class="btn btn-primary cta-pulse" style="width: 100%; margin-top:20px;">Register Now</a>
+          </div>
+
+          <!-- Box 4 -->
+          <div class="price-card best-value" style="border-color: var(--accent-blue);">
+            <div class="badge" style="background: var(--accent-blue); color: var(--primary-blue);">DRONE OFFLINE</div>
+            <h3>Offline Drone</h3>
+            <p style="margin-top: 10px;">1 Month Offline Mode</p>
+            <ul style="margin-top: 15px;">
+              <li>3 Sessions per week</li>
+              <li>FREE Robotics Kit (worth ₹2000)</li>
+              <li>Refer 5 Friends for ₹500 Discount!</li>
+            </ul>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSchzLQ1E5rFpXlHDoTiKQEpYJR9k3nB4aK0OdbcK1PN5jRbAg/viewform?usp=header"
+              target="_blank" class="btn btn-primary cta-pulse" style="width: 100%; margin-top:20px;">Register Now</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="section-title text-center">Frequently Asked <span>Questions</span></h2>
+        <div class="faq-list">
+          <details>
+            <summary>Who can join this camp?</summary>
+            <p>Any student from Grade 1 to 12 with a curiosity for tech! We have separate batches for Junior and Senior
+              learners.</p>
+          </details>
+          <details>
+            <summary>Do we need prior knowledge?</summary>
+            <p>Not at all. We start from absolute basics and scale up to advanced concepts.</p>
+          </details>
+          <details>
+            <summary>Is this offline or online?</summary>
+            <p>We provide both offline and online learning modes depending on your preference.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <img src="95e698d9-2da9-4898-8bfb-68a85e464ddf_removalai_preview (2).png" alt="Raak Sapphire Logo"
+          style="height: 60px; margin-bottom: 15px;">
+        <p>Give Your Child Future Skills Today.</p>
+        <p>Email: info@raaksapphire.com</p>
+        <p>Phone: +91 82173 78963</p>
+      </div>
+      <div class="footer-cta" style="display: flex; flex-direction: column; gap: 15px;">
+        <a href="https://youtube.com/@raaksapphire5445?si=Dfwx39UiMx68Dj-w" target="_blank"
+          class="btn btn-youtube">Follow on YouTube</a>
+        <a href="https://www.instagram.com/raak_edutech?igsh=d3Jtb3IwM2dnd3Y2" target="_blank"
+          class="btn btn-instagram">Follow on Instagram</a>
+        <a href="https://wa.me/918217378963" target="_blank" class="btn" style="background:#25D366; color:white;">Start
+          WhatsApp Chat</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Timed Registration Popup -->
+  <div class="popup-overlay" id="exit-popup">
+    <div class="popup-box">
+      <h2>Register Now!</h2>
+      <p>Scan the code below or click the button to lock in a <strong>FREE Robotics kit worth Rs 2000/-</strong> with
+        your registration!</p>
+
+      <img
+        src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://docs.google.com/forms/d/e/1FAIpQLSchzLQ1E5rFpXlHDoTiKQEpYJR9k3nB4aK0OdbcK1PN5jRbAg/viewform?usp=header"
+        alt="Registration QR Code"
+        style="margin: 20px auto; display: block; border-radius: 8px; border: 4px solid var(--white);">
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSchzLQ1E5rFpXlHDoTiKQEpYJR9k3nB4aK0OdbcK1PN5jRbAg/viewform?usp=header"
+        target="_blank" class="btn btn-primary cta-pulse" style="margin-top: 5px; width: 100%;"
+        onclick="closePopup()">Proceed to Registration</a>
+      <span class="close-btn" onclick="closePopup()">✕</span>
+    </div>
+  </div>
+
+  <script src="script.js?v=3"></script>
+</body>
+
+</html>
