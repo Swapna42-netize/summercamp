@@ -29,16 +29,20 @@
       <a href="#programs" class="nav-link">Programs</a>
       <a href="#pricing" class="nav-link">Pricing</a>
       <a href="#faq" class="nav-link">FAQ</a>
+      <div class="nav-mobile-actions">
+        <button id="theme-toggle-mobile" class="btn btn-icon theme-toggle-mobile"
+          aria-label="Toggle Dark/Light Mode" title="Toggle Dark/Light Mode">☀️</button>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSchzLQ1E5rFpXlHDoTiKQEpYJR9k3nB4aK0OdbcK1PN5jRbAg/viewform?usp=header"
+          class="btn btn-outline" target="_blank">Register Here</a>
+        <a href="https://forms.gle/cyLb8YosPR9vvDvZ7" class="btn btn-primary" target="_blank">Free Demo</a>
+      </div>
     </nav>
-    <div style="display: flex; gap: 10px; align-items: center;">
-      <button id="theme-toggle" class="btn btn-icon"
-        style="background: transparent; border: none; font-size: 1.5rem; cursor: pointer; padding: 0 10px; transition: transform 0.3s; color: var(--primary-yellow);"
+    <div class="nav-actions">
+      <button id="theme-toggle" class="btn btn-icon theme-toggle-header"
         aria-label="Toggle Dark/Light Mode" title="Toggle Dark/Light Mode">☀️</button>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSchzLQ1E5rFpXlHDoTiKQEpYJR9k3nB4aK0OdbcK1PN5jRbAg/viewform?usp=header"
-        class="btn btn-outline" target="_blank"
-        style="padding: 0.6rem 1rem; border: 1px solid var(--primary-yellow); color: var(--primary-yellow); background: rgba(0,0,0,0.3);">Register
-        Here</a>
-      <a href="https://forms.gle/cyLb8YosPR9vvDvZ7" class="btn btn-primary" target="_blank">Book Free Demo</a>
+        class="btn btn-outline nav-register-btn" target="_blank">Register Here</a>
+      <a href="https://forms.gle/cyLb8YosPR9vvDvZ7" class="btn btn-primary nav-demo-btn" target="_blank">Free Demo</a>
     </div>
     <div class="hamburger">
       <span class="bar"></span>
@@ -223,102 +227,49 @@
 
     <!-- Unified Program & Modes Section -->
     <section id="programs" class="programs-section">
+      <div class="modes-selector text-center">
+        <h3>Program <span class="highlight">Modes</span></h3>
+        <p>Choose the learning environment that best fits your child's needs. Every student gets a <strong class="highlight">Free Robotics Kit</strong> regardless of the mode.</p>
 
-      <!-- Mode Selection Benefits -->
-      <div class="modes-selector text-center" style="margin-top: 50px;">
-        <h3 style="color: var(--white); margin-bottom: 15px; font-size: 2.2rem;">Program <span
-            class="highlight">Modes</span></h3>
-        <p style="color: var(--text-dark); max-width: 700px; margin: 0 auto 30px;">Choose the learning environment
-          that best fits your child's needs. Every student gets a <strong style="color: var(--primary-yellow);">Free
-            Robotics Kit</strong> regardless of the mode.</p>
-
-        <div class="mode-grid" style="display: flex; flex-direction: column; gap: 40px;">
+        <div class="mode-grid">
           <!-- Online Mode -->
-          <div class="mode-info-card"
-            style="display: flex; flex-wrap: wrap; text-align: left; align-items: stretch; gap: 40px; background: transparent; padding: 0; border: none;">
-            <div style="flex: 1; min-width: 280px; display: flex; align-items: center; justify-content: center;">
-              <div
-                style="width: 100%; max-width: 400px; padding: 10px; border: 2px solid var(--primary-yellow); border-radius: 12px; background: rgba(0,0,0,0.2);">
-                <img src="WhatsApp Image 2026-04-09 at 4.03.27 AM.jpeg" alt="Online Mode Poster"
-                  style="width: 100%; height: auto; object-fit: contain; border-radius: 8px; display: block;">
+          <div class="mode-info-card">
+            <div class="mode-image-container">
+              <div class="poster-frame">
+                <img src="WhatsApp Image 2026-04-09 at 4.03.27 AM.jpeg" alt="Online Mode Poster">
               </div>
             </div>
-            <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; justify-content: center;">
-              <h4 style="margin-bottom: 20px; font-size: 2rem; color: var(--primary-yellow);">Online Mode</h4>
-              <p
-                style="color: var(--text-light); margin-bottom: 25px; font-size: 1.1rem; line-height: 1.6; padding-right: 20px;">
-                Experience world-class robotics training from the comfort of your home. Perfect for busy schedules and
-                learners across India. Get a <strong style="color: white;">Free Robotics Kit</strong> delivered to your
-                door!
-              </p>
-              <ul style="margin: 0; padding: 0; list-style: none;">
-                <li
-                  style="margin-bottom: 15px; display: flex; gap: 15px; color: var(--text-light); font-size: 1.1rem; align-items: flex-start;">
-                  <span style="color: var(--primary-yellow);">→</span> <span>Live interactive mentorship with real-time
-                    feedback</span>
-                </li>
-                <li
-                  style="margin-bottom: 15px; display: flex; gap: 15px; color: var(--text-light); font-size: 1.1rem; align-items: flex-start;">
-                  <span style="color: var(--primary-yellow);">→</span> <span>Flexible timing to match your child's
-                    schedule</span>
-                </li>
-                <li
-                  style="margin-bottom: 15px; display: flex; gap: 15px; color: var(--text-light); font-size: 1.1rem; align-items: flex-start;">
-                  <span style="color: var(--primary-yellow);">→</span> <span>Free Robotics Kit safely delivered to your
-                    doorstep</span>
-                </li>
-                <li
-                  style="margin-bottom: 0; display: flex; gap: 15px; color: var(--text-light); font-size: 1.1rem; align-items: flex-start;">
-                  <span style="color: var(--primary-yellow);">→</span> <span>Engaging software-based project
-                    simulations</span>
-                </li>
+            <div class="mode-text-content">
+              <h4>Online Mode</h4>
+              <p>Experience world-class robotics training from the comfort of your home. Perfect for busy schedules and learners across India. Get a <strong style="color: white;">Free Robotics Kit</strong> delivered to your door!</p>
+              <ul>
+                <li><span class="bullet">→</span> <span>Live interactive mentorship with real-time feedback</span></li>
+                <li><span class="bullet">→</span> <span>Flexible timing to match your child's schedule</span></li>
+                <li><span class="bullet">→</span> <span>Free Robotics Kit safely delivered to your doorstep</span></li>
+                <li><span class="bullet">→</span> <span>Engaging software-based project simulations</span></li>
               </ul>
             </div>
           </div>
 
           <!-- Offline Mode -->
-          <div class="mode-info-card"
-            style="display: flex; flex-wrap: wrap; text-align: left; align-items: stretch; gap: 40px; background: transparent; padding: 0; border: none;">
-            <div style="flex: 1; min-width: 280px; display: flex; align-items: center; justify-content: center;">
-              <div
-                style="width: 100%; max-width: 400px; padding: 10px; border: 2px solid var(--primary-yellow); border-radius: 12px; background: rgba(0,0,0,0.2);">
-                <img src="WhatsApp Image 2026-04-09 at 4.04.02 AM.jpeg" alt="Offline Mode Poster"
-                  style="width: 100%; height: auto; object-fit: contain; border-radius: 8px; display: block;">
+          <div class="mode-info-card">
+            <div class="mode-image-container">
+              <div class="poster-frame">
+                <img src="WhatsApp Image 2026-04-09 at 4.04.02 AM.jpeg" alt="Offline Mode Poster">
               </div>
             </div>
-            <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; justify-content: center;">
-              <h4 style="margin-bottom: 20px; font-size: 2rem; color: var(--primary-yellow);">Offline Mode</h4>
-              <p
-                style="color: var(--text-light); margin-bottom: 25px; font-size: 1.1rem; line-height: 1.6; padding-right: 20px;">
-                Join us at our tech-hubs for an immersive, hands-on experience with expert instructors and peer
-                collaboration. <strong style="color: white;">Free Robotics Kit</strong> provided in-class!
-              </p>
-              <ul style="margin: 0; padding: 0; list-style: none;">
-                <li
-                  style="margin-bottom: 15px; display: flex; gap: 15px; color: var(--text-light); font-size: 1.1rem; align-items: flex-start;">
-                  <span style="color: var(--primary-yellow);">→</span> <span>Direct face-to-face guidance from expert
-                    instructors</span>
-                </li>
-                <li
-                  style="margin-bottom: 15px; display: flex; gap: 15px; color: var(--text-light); font-size: 1.1rem; align-items: flex-start;">
-                  <span style="color: var(--primary-yellow);">→</span> <span>Access to advanced on-site tools and build
-                    spaces</span>
-                </li>
-                <li
-                  style="margin-bottom: 15px; display: flex; gap: 15px; color: var(--text-light); font-size: 1.1rem; align-items: flex-start;">
-                  <span style="color: var(--primary-yellow);">→</span> <span>Free Robotics Kit provided directly
-                    in-class</span>
-                </li>
-                <li
-                  style="margin-bottom: 0; display: flex; gap: 15px; color: var(--text-light); font-size: 1.1rem; align-items: flex-start;">
-                  <span style="color: var(--primary-yellow);">→</span> <span>Team-building and exciting peer
-                    collaboration</span>
-                </li>
+            <div class="mode-text-content">
+              <h4>Offline Mode</h4>
+              <p>Join us at our tech-hubs for an immersive, hands-on experience with expert instructors and peer collaboration. <strong style="color: white;">Free Robotics Kit</strong> provided in-class!</p>
+              <ul>
+                <li><span class="bullet">→</span> <span>Direct face-to-face guidance from expert instructors</span></li>
+                <li><span class="bullet">→</span> <span>Access to advanced on-site tools and build spaces</span></li>
+                <li><span class="bullet">→</span> <span>Free Robotics Kit provided directly in-class</span></li>
+                <li><span class="bullet">→</span> <span>Team-building and exciting peer collaboration</span></li>
               </ul>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
 

@@ -1,27 +1,30 @@
 // Theme Toggle Logic
-const themeToggle = document.getElementById('theme-toggle');
-if (themeToggle) {
-  // Check local storage for preference
-  const currentTheme = localStorage.getItem('theme');
-  if (currentTheme === 'light') {
-    document.body.classList.add('light-mode');
-    themeToggle.textContent = '🌙';
-  } else {
-    themeToggle.textContent = '☀️';
-  }
+const themeToggles = document.querySelectorAll('#theme-toggle, #theme-toggle-mobile');
 
-  themeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('light-mode');
-    let theme = 'dark';
-    if (document.body.classList.contains('light-mode')) {
-      theme = 'light';
-      themeToggle.textContent = '🌙';
-    } else {
-      themeToggle.textContent = '☀️';
-    }
-    localStorage.setItem('theme', theme);
-  });
+function updateThemeUI(theme) {
+  if (theme === 'light') {
+    document.body.classList.add('light-mode');
+    themeToggles.forEach(btn => btn.textContent = '🌙');
+  } else {
+    document.body.classList.remove('light-mode');
+    themeToggles.forEach(btn => btn.textContent = '☀️');
+  }
 }
+
+// Check local storage for preference
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+  updateThemeUI(savedTheme);
+}
+
+themeToggles.forEach(toggle => {
+  toggle.addEventListener('click', () => {
+    const isLight = document.body.classList.toggle('light-mode');
+    const newTheme = isLight ? 'light' : 'dark';
+    localStorage.setItem('theme', newTheme);
+    updateThemeUI(newTheme);
+  });
+});
 
 // Sticky Navigation Header
 window.addEventListener('scroll', () => {
